@@ -23,7 +23,8 @@ var notification = [
     'workrave',         // Workrave
     'gajim',            // Gajim
     'wicd-client.py',   // Wicd-gtk
-    'skype'             // Skype
+    'skype',            // Skype
+    'claws-mail'        // Claws Mail
 ]
 
 
