@@ -1,18 +1,18 @@
 Evil Status Icon Forever
 ========================
 
-This is a GNOME 3.2 - 3.6 shell extensions that let users have good old applet-like notification area on the top bar.
+This is a GNOME 3.2 - 3.8 shell extension that lets users have good old applet-like notification area on the top bar.
 
 
 How to Install
 --------------
 
- 1. Enable it at https://extensions.gnome.org/extension/99/evial-status-icon-forerver/
+Enable it at https://extensions.gnome.org/extension/99/evial-status-icon-forerver/ by clicking the "Off" slider.
 
 How to Use
 -----------
 
-After install and enable this extension, you should have a file under `~/.local/share/gnome-shell/extensions/EvilStatusIconForever@bone.twbbs.org.tw/extension.js`.
+After installing and enabling this extension, you should have a file under `~/.local/share/gnome-shell/extensions/EvilStatusIconForever@bone.twbbs.org.tw/extension.js`.
 
 Open this file using your favorite text editor, you should have seen the following code section, just add the application into ``notification`` array to make its notification show on top bar.
 
@@ -58,8 +58,8 @@ You have to restart GNOME (Alt-F2 and enter r) to make it work after install and
 How to Find Application Name
 =============================
 
-  0. This may borken your GNOME, BE CAREFUL AND BACKUP FIRST!!!!
-  1. You need root premission to do this.
+  0. This may borken your GNOME, BE CAREFUL AND BACK UP FIRST!!!!
+  1. You need root permission to do this.
   2. Edit `/usr/share/gnome-shell/js/ui/statusIconDispatcher.js`
   3. Move to line 48, you should see a function called `_onTrayIconAdded` which look like the following:
 
@@ -84,14 +84,14 @@ How to Find Application Name
                 this.emit('message-icon-added', icon);
         },  
 
-  5. Restart GNOME 3 by press `Alt + F2` and `r` and hit enter.
-  6. Start GNOME console by press `Alt + F2` and `lg` and hit enter.
-  7. Switch to `Errors` tab, now you should see message like the following:
+  5. Restart GNOME 3 by pressing `Alt + F2` and `r` and hit enter.
+  6. Start GNOME console by pressing `Alt + F2` and `lg` and hit enter.
+  7. Switch to the `Errors` tab, now you should see message like the following:
 
         wmClass[] = deadbeef
         wmClass[] = pidgin
 
-  8. The above is all tray icon you have now, pick up those tray icon you want it appears on top bar, and put thier name into `notification` array.
+  8. The above is all tray icons you have now, choose the tray icons you want to appear on the menu (top) bar, and put their names into `notification` array.
   9. Restart GNOME, now you should see them on top bar. Goold Luck! :)
 
         
